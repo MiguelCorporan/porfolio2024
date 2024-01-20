@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .8rem;
+    margin-bottom: 4rem;
+}
+
+.header h2{
+    margin-top: 1.6rem;
+    font-size: 2rem;
+    color: #70208E;
+}
+
+.header img{
+    width: 3rem;
+}
+
+.nav{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0px;
+    top: 4rem;
+    width: 20rem;
+    transform: translateX(150%);
+    transition: transform 0.5s ease 0s;
+    height: 50vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+box-shadow: -5px 3px 26px -3px rgba(0,0,0,0.45);
+-webkit-box-shadow: -5px 3px 26px -3px rgba(0,0,0,0.45);
+-moz-box-shadow: -5px 3px 26px -3px rgba(0,0,0,0.45);
+}
+
+.nav .mon{
+    width: 1.2rem;
+    transition: all .4s ease;
+    cursor: pointer;   
+}
+
+.nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.nav .mon{
+    margin-top: 8px;
+}
+
+/*-----------------*/
+
+.nover{
+    display: none;
+}
+
+.ver{
+    display: flex;
+}
+
+.viewNav{
+    transform: translateX(0%);
+}
+
+.ModoDos{
+    display: none;
+    transition: all .4s ease;
+}
+
+.ver{
+    transition: all .4s ease;
+    display: block;
+}
+
+/*--------- SECCION UNO------ */
+
+.seccionUno article{
+    text-align: center;
+}
+
+.seccionUno_p1{
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.seccionUno_p2{
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.seccionUno_p3{
+    padding: 0 8px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+
+.seccionuno_divdos img{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- SECCION DOS ---------- */
+
+h2{
+    color: #70208E;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.seccionDos_divUno p{
+    text-align: center;
+    padding: 0 .8rem;
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.seccionDos_divDos img{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------- SECCION TRES --------- */
+.seccionTres_divUno{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+.seccionTres_divUno div{
+    width: 32%;
+    border: 1.5px solid #70208E;
+    border-radius: 4px;
+    padding: .4rem;
+
+    background-color: #f7f7f7;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.seccionTres_divUno div:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.seccionTres_divUno p{
+        color: #333;
+        line-height: 1.5;
+    
+}
+
+.seccionTres_divDos img{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*SECCION CUATRO */
+
+.seccionCuatro {
+    text-align: center;
+    padding: 40px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.article_SeccionCuatro {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.proyecto {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+h4 {
+    margin: 20px 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.Descripcion {
+    padding: 0 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.elementos,
+.visualizar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.elementos img,
+.visualizar img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(50%);
+    transition: filter 0.3s;
+}
+
+.elementos img:hover,
+.visualizar img:hover {
+    filter: grayscale(0%);
+}
+
+.visualizar a {
+    text-decoration: none;
+    color: #70208E;
+    transition: color 0.3s;
+}
+
+.visualizar a:hover {
+    color: #333;
+}
+
+/*---------SECCCION CINCO ------------*/
+
+.seccion_cinco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.inp_div {
+    display: flex;
+    align-items: center;
+}
+
+#correo {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cont_img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.cont_img img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.imag {
+    width: 100%;
+    margin-top: 32px;
+    /* max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.descargar{
+    padding: 0.6rem 1rem;
+   border-radius: 20px;
+   font-weight: 600;
+   color: #ffffff;
+   background-color: #70208E;
+   text-decoration: none;
+   transition: .5s ease; 
+}
+
+.descargar:hover{
+    background-color: #fff;
+   outline: 1px solid #af69cd; 
+     color: #70208E;
+ }
+
+.des{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+/* -------- FOOTER -------- */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    text-align: center;
+    
+    width: 100%;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333; 
+}
+
+footer a {
+    color: #70208E;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #FFD700; 
+}
+
+/*----------------------------*/
+
+body.dark {
+    background-color: #282828;
+    transition: all .4s ease;
+  }
+  
+  body.dark p{
+    color: #f2f2f2;
+  }
+
+  body.dark nav{
+    background-color: #282828;
+  }
+
+  body.dark .seccionTres_divUno p{
+    color: #333;
+  }
+
+  body.dark .proyecto p{
+    color: #333;
+  }
+
+  body.dark footer p{
+    color: #333;
+  }
+
+  body.dark h1{ 
+    color: #fff;
+  }
+  
+
+@media screen and (min-width:1024px) {
+
+
+    .header{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .nav{
+    transform: translateX(0%);
+    background-color: rgb(255, 255, 255);
+    right: 1rem;
+    top: 1rem;
+    width: 27rem;
+    height: 2.5rem;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+
+    .menu{
+        display: none;
+    } 
+
+    /*------------------*/
+    /*------------------*/
+    /*------------------*/
+
+
+    h2{
+        font-size: 2.5rem;
+        color: #70208E; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+        margin-bottom: 1.5rem; 
+    }
+
+    .seccionUno, .seccionDos, .seccionTres, .seccionCuatro, .seccion_cinco{
+        margin-bottom: 4rem;
+    }
+
+    .seccionUno article{
+        text-align: left;
+        display: flex;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mitad{
+        flex: 1;   
+        padding: 0 24px;
+    }
+
+    .se
+
+    .seccionUno_p1{
+        font-size: 1.4rem;
+        margin-bottom: 0px;
+    }
+
+    .seccionUno_p3{
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    /*SECCION DOS*/
+
+    .seccionDos article{
+        display: flex;
+        width: 85%;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .seccionDos_divUno p{
+        text-align: left;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+
+    /*SECCION TRES*/
+
+    .seccionTres article{
+        width: 85%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* SECCION CUATRO*/
+
+    .article_SeccionCuatro {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    h4{
+        margin: 8px 0px;
+    }
+
+    .elementos,
+  .visualizar {
+    padding: 8px 20px;
+}
+
+    /*SECCION CINCO*/
+
+    .seccion_cinco_divuno{
+        padding: 4rem 8rem 0rem 1.5rem;
+    }
+
+    .seccion_cinco article{
+        display: flex;
+        width: 85%;
+    }
+
+ }

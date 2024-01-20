@@ -40,19 +40,19 @@ ImgSol.addEventListener('click', () => {
 const Copiar = document.querySelector('.copiar')
 
     Copiar.addEventListener('click', () =>  {
-    // Obtener el campo de texto por su ID
+
     var campoCorreo = document.getElementById("correo");
 
-    // Seleccionar el texto dentro del campo de texto
+
     campoCorreo.select();
 
-    // Copiar el texto al portapapeles
+
     document.execCommand("copy");
 
-    // Desseleccionar el texto
+ 
     window.getSelection().removeAllRanges();
 
-    // Informar al usuario que se ha copiado el correo
+
     alert("Correo copiado: " + campoCorreo.value);
   }
     )
